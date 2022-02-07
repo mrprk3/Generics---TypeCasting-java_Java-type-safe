@@ -1,0 +1,12 @@
+package com.mrprk;
+import java.util.ArrayList;
+public class Test7 {
+    public static void main(String[] args) {
+            ArrayList al = new ArrayList();   // This is not type safe
+            al.add(10);
+            System.out.println(al);
+           ArrayList <Integer> all = new ArrayList<Integer>(); // using generics we provide the typesafe
+           all.add(100);
+           System.out.println(all);
+    }
+}
